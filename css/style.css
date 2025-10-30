@@ -1,4 +1,8 @@
-:root {
+/* =======================
+   🌐 MURAD SHOP STYLES (Clean Version)
+======================= */
+
+:root { 
   --blue: #0b6ef6;
   --dark: #0b0b0b;
   --green: #16a34a;
@@ -6,18 +10,36 @@
   --purple: #7c3aed;
 }
 
-body {
-  font-family: Arial, sans-serif;
+/* Reset */
+* {
   margin: 0;
-  background: #f3f6fb;
-  color: #111;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
+/* =======================
+   🔹 BODY BASE
+======================= */
+body {
+  background: linear-gradient(135deg, #0a0f1f, #0d3b66);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* =======================
+   🔹 SITE HEADER
+======================= */
 .site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 18px;
+  width: 100%;
   background: linear-gradient(90deg, var(--blue), #000);
   color: #fff;
 }
@@ -39,20 +61,64 @@ body {
   color: #fff;
   text-decoration: none;
   margin-left: 14px;
+  transition: color 0.3s ease;
 }
 
+.main-nav a:hover {
+  color: var(--yellow);
+}
+
+/* =======================
+   🔹 CONTAINER & GRID
+======================= */
 .container {
   max-width: 1000px;
   margin: 20px auto;
   padding: 10px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: #fff;
+  color: #111;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(2,6,23,.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(2,6,23,.15);
+}
+
+.product img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* =======================
+   🔹 BUTTONS
+======================= */
 .btn {
   padding: 10px 14px;
   border-radius: 8px;
   text-decoration: none;
   color: #fff;
   display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
 .btn-primary { background: var(--blue); }
@@ -60,64 +126,9 @@ body {
 .btn-yellow { background: var(--yellow); color: #111; }
 .btn-purple { background: var(--purple); }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.product {
-  background: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(2,6,23,.08);
-}
-
-.product img {
-  width: 100%;
-  border-radius: 8px;
-  height: 160px;
-  object-fit: cover;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* =======================
-   🎨 MURAD SHOP STYLES
-========================= */
-
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background: linear-gradient(135deg, #0a0f1f, #0d3b66);
-  color: #fff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-/* Header */
+   🔹 HEADER SECTION
+======================= */
 header {
   text-align: center;
   margin-top: 40px;
@@ -135,7 +146,9 @@ header p {
   color: #b8c6db;
 }
 
-/* Contact Section */
+/* =======================
+   🔹 CONTACT SECTION
+======================= */
 .contact-section {
   background: rgba(255, 255, 255, 0.05);
   padding: 25px;
@@ -164,6 +177,7 @@ input, textarea {
   background: rgba(0, 0, 0, 0.2);
   color: white;
   font-size: 0.95rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
 }
 
 input:focus, textarea:focus {
@@ -171,7 +185,9 @@ input:focus, textarea:focus {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* Button */
+/* =======================
+   🔹 FORM BUTTON
+======================= */
 button {
   margin-top: 20px;
   padding: 12px;
@@ -191,7 +207,9 @@ button:hover {
   box-shadow: 0 0 10px #00bfff;
 }
 
-/* Responsive */
+/* =======================
+   🔹 RESPONSIVE DESIGN
+======================= */
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.8rem;
@@ -199,6 +217,10 @@ button:hover {
 
   .contact-section {
     width: 95%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 
