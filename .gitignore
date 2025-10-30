@@ -1,0 +1,11 @@
+node_modules/
+.vscode/
+*.zip
+*.mp4
+*.png
+*.jpg
+*.exe
+*.msi
+AppData/
+Downloads/
+Desktop/

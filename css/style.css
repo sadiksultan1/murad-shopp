@@ -1,0 +1,208 @@
+:root {
+  --blue: #0b6ef6;
+  --dark: #0b0b0b;
+  --green: #16a34a;
+  --yellow: #f59e0b;
+  --purple: #7c3aed;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f3f6fb;
+  color: #111;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 18px;
+  background: linear-gradient(90deg, var(--blue), #000);
+  color: #fff;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn-primary { background: var(--blue); }
+.btn-green { background: var(--green); }
+.btn-yellow { background: var(--yellow); color: #111; }
+.btn-purple { background: var(--purple); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(2,6,23,.08);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  height: 160px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================
+   🎨 MURAD SHOP STYLES
+========================= */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0f1f, #0d3b66);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+header h1 {
+  color: #00bfff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #b8c6db;
+}
+
+/* Contact Section */
+.contact-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+  width: 90%;
+  max-width: 500px;
+  margin-top: 30px;
+  backdrop-filter: blur(8px);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #cce7ff;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #00bfff;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 0.95rem;
+}
+
+input:focus, textarea:focus {
+  border-color: #1e90ff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #00bfff, #1e90ff, #0d3b66);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #1e90ff, #00bfff, #004b93);
+  box-shadow: 0 0 10px #00bfff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-section {
+    width: 95%;
+  }
+}
+
+
+
+
+
